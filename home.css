@@ -1,28 +1,79 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #E5E5E5;
-    border: 1px solid yellow;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+  background-color: #ffffff;
+  border: 1px solid yellow;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
 }
 
 .container {
   border: 1px solid orange;
   box-sizing: border-box;
   height: 100%;
-      position: relative;
+  position: relative;
+  padding: 0 30px;
+  padding-top: 53px;
+  /* padding: 0(atas) 0(kanan) 0(bawah) 0(kiri)
+  padding: 0(kiri) 0(atas=bawah) 0(kanan)
+  padding: 0(atas=bawah) 0(kiri=kanan) */
 }
 
-.footer {
-    border: 1px solid red;
-    height: 100px;
-    position: absolute;
-    width: calc(100% - 30px);
-    bottom: 0px;
-    margin: 0px 15px 7px 15px;
-    border-radius: 25px;
+.container .header {
+  height: 173px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+  
 }
+
+.header .box-welcome {
+width: calc(100% - 24px);
+
+}
+
+.box-welcome .txt-welcome {
+      color: #000000;
+      font-weight: 500;
+      font-size: 24px;
+}
+
+.box-welcome .txt-plant {
+      color: #00B761;
+      font-weight: bold;
+      font-size: 40px;
+}
+
+.header .box-trolley {
+width: 24px;
+display: flex;
+justify-content: center;
+
+}
+
+.container .footer {
+  height: 79px;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  margin: 0 -22px 9px -22px;
+  width: calc(100% - 16px);
+}
+
+.footer .icn-footer {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
