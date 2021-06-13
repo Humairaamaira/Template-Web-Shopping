@@ -1,19 +1,19 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: #ffffff;
   border: 1px solid yellow;
-  margin: 0;
-  padding: 0;
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
 }
 
 .container {
   border: 1px solid orange;
-  box-sizing: border-box;
   height: 100%;
   position: relative;
   padding: 0 30px;
@@ -25,148 +25,113 @@ body {
 
 .container .header {
   border: 1px solid green;
-  height: 138px;
+  height: 85px;
   width: 100%;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
+  margin-bottom: 35px;
 }
 
 .header .box-welcome {
-width: calc(100% - 24px);
-
+  width: calc(100% - 24px);
 }
 
 .box-welcome .txt-welcome {
-      color: #000000;
-      font-weight: 500;
-      font-size: 24px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .box-welcome .txt-plant {
-      color: #00B761;
-      font-weight: bold;
-      font-size: 40px;
+  color: #00b761;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .header .box-trolley {
-width: 24px;
-display: flex;
-justify-content: center;
+  width: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .container .sec-header {
   border: 1px solid purple;
-  box-sizing: border-box;
-  height: 85px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin-bottom: 35px;
 }
 
 .sec-header .box-search {
-  border: 1px solid red;
-  box-sizing: border-box;
   height: 50px;
   width: 294px;
+  background-color: #f1f1f1;
+  border-radius: 12px;
   display: flex;
   flex-direction: row;
-  background-color: #F1F1F1;
-  border-radius: 12px;
-
+  margin-right: 10px;
+  overflow: hidden;
 }
 
 .box-search .icn-search {
-width: 24px;
-height: 24px;
-margin-left: 13px;
-margin-top: 13px;
-margin-bottom: 13px;
+  border: 1px solid red;
+  width: 24px;
+  height: 24px;
+  margin: 13px 9px 13px 13px;
 }
 
 .box-search .txt-search {
-width: 50px;
-height: 19px;
-margin-left: 46px;
-margin-right: 198px;
-margin-top: 15px;
-margin-bottom: 16px;
-font-size: 19px;
-font-weight: 400;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-line-height: 16px;
+  width: 100%;
+  background-color: inherit;
+  border: unset;
+  font-size: 16px;
+}
 
+.box-search .txt-search::placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 .sec-header .box-filter {
-border: 1px solid green;
-height: 50px;
-width: 50px;
-margin-left: -30px;
-margin-right: -334px;
+  border: 1px solid green;
+  height: 50px;
+  width: 50px;
 }
 
 .container .thi-header {
-border: 1px solid blue;
-height: 25px;
-display: flex;
-flex-direction: row;
+  border: 1px solid blue;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.thi-header .box-page {
-  border: 1px solid indigo;
-height: 16px;
-display: flex;
-flex-direction: row;
+.thi-header .box-menu {
+  /* border: 1px solid red; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
 }
 
-.box-page .txt-popular {
-    color: #00B761;
-    width: 63px;
-    height: 16px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+.thi-header .box-menu:hover {
+  color: #00b761;
+  font-weight: bold;
 }
 
-.box-page .txt-organic {
-color: #000000;
-width: 61px;
-height: 16px;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-margin-left: 32px;
+.box-menu .txt-menu {
+  margin-bottom: 5px;
+  height: 16px;
 }
 
-.box-page .txt-indoors {
-color: #000000;
-width: 60px;
-height: 16px;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-margin-left: 32px;
+.thi-header .box-menu:hover > .box-scroll {
+  height: 2px;
+  background-color: #00b761;
+  border-radius: 11px;
+  width: 50%;
 }
-
-.box-page .txt-synthetic {
-color: #000000;
-width: 75px;
-height: 16px;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-margin-left: 31px;
-}
-
-.thi-header .box-scroll {
-    margin-left: -354px;
-    margin-top: 7px;
-    height: 2px;
-    width: 27px;
-}
-
 
 .container .footer {
   height: 79px;
@@ -186,6 +151,4 @@ margin-left: 31px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
-
